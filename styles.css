@@ -8,7 +8,7 @@
 .container{
     width: 100%;
     height: 100vh;
-    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('file:///home/trial/Programm%20code%20files/HTML%20Projects/CamXML/bg.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('/files/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -231,13 +231,13 @@
 }
 #dp1{
     float: left;
-    background-image: url('file:///home/trial/Programm%20code%20files/HTML%20Projects/CamXML/photo_2023-04-02_16-51-22.png');
+    background-image: url('/files/vizz.png');
     background-position: center;
     background-size: cover;
 }
 #dp2{
     float: right;
-    background-image: url('file:///home/trial/Programm%20code%20files/HTML%20Projects/CamXML/photo_2023-04-02_16-48-51.png');
+    background-image: url('/files/sanjid.png');
     background-position: center;
     background-size: cover;
 }
