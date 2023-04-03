@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('file:///home/trial/Programm%20code%20files/HTML%20Projects/CamXML/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7px 0;
+}
+.navbar{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 35px;
+    border-radius: 40px;
+    position: fixed;
+    left: 10vw;
+    z-index: 1;
+}
+.logo-txt{
+    color: #ffff;
+    padding: 13px;
+    background-color: #19d6c8;
+    border-radius: 30px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0 30px;
+    border-radius: 30px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #19d6c8;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    transition: 0.3s;
+}
+.wlcm-root{
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    left: 5vw;
+    padding: 20px;
+}
+.body1-root{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.div1-txt{
+    width: 35%;
+    padding: 10px;
+}
+.div1-txt h1{
+    color: #ffff;
+    font-family: sans-serif;
+    font-size:10vw ;
+}
+.div1-txt h1 span{
+    color:#19d6c8;
+}
+.div1-txt p{
+    color: #ffff;
+    line-height: 25px;
+}
+.btn-container button{
+    position: relative;
+    margin-top: 10px;
+    padding: 13px 40px;
+    border: 2px solid #19d6c8;
+    background: transparent;
+    border-radius: 40px;
+    color: #ffff;
+    font-size: 19px;
+    font-weight: 600;
+}
+.btn-container button:hover{
+    background-color: #19d6c8;
+    transition: 1s;
+}
+.btn-container{
+    text-align: center;
+    padding: 10px;
+}
+/*body 2*/
+.bg-body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.body2-root{
+    width: 90vw;
+    height: 82vh;
+    position: relative;
+    top: 16vh;
+    background-color: rgba(29, 23, 23, 0.651);
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.body2-root h2{
+    color: #ffff;
+    font-size: 40px;
+    padding: 10px;
+}
+.body2-root h2 span{
+    color:#19d6c8;
+}
+.div2-txt{
+    width: 95%;
+    margin: 10px auto;
+}
+.div2-txt p{
+    color: #ffff;
+    line-height: 20.5px;
+}
+.div2-txt h3{
+    color: #19d6c8;
+}
+
+/*Download section*/
+
+#download{
+    background-color: rgba(29, 23, 23, 0.8);
+    padding: 30px;
+}
+.dwnld-root{
+    margin-top: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dwnld-div{
+    width: 49.5%;
+    height: 81vh;
+    text-align: center;
+    color: #ffff;
+    border: 3px solid #19d6c8;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(36, 36, 36, 0.596);
+}
+.dwnld-div h2{
+    color: #ffff;
+    font-size: 2vw;
+}
+.dwnld-div button{
+    width: 90px;
+    padding: 10px;
+    background: #19d6c8;
+    color: #ffff;
+    border-radius: 33px;
+    border: none;
+}
+.dwnld-file-div{
+    margin: auto;
+    text-align: left;
+    list-style-position: inside;
+    height: 78%;
+    margin-top: 3%;
+    padding: 30px;
+    border-top: 0.5px solid #ffff;
+}
+.dwnld-file-div h3{
+    width: 150px;
+    border-bottom: 3px solid #19d6c8;
+    padding: 3px 0;
+    font-size: 16px;
+}
+.dwnld-file-li{
+    width: 100%;
+    margin: 10px 0;
+    list-style-position: outside;
+}
+.dwnld-file-li ul li a{
+    color: #19d6c8;
+}
+.dwnld-file-div ul li{
+    margin: 10px 0;
+}
+
+/*About us section*/
+#about{
+    padding: 30px;
+    color: #ffff;
+}
+.abt-root{
+    width: 100%;
+    height: 80vh;
+    margin-top: 65px;
+}
+.prsn-root{
+    width: 100%;
+    height: 50%;
+    padding: 30px;
+}
+.prsn-container{
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+}
+.dp{
+    width: 13%;
+    height: 100%;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+#dp1{
+    float: left;
+    background-image: url('file:///home/trial/Programm%20code%20files/HTML%20Projects/CamXML/photo_2023-04-02_16-51-22.png');
+    background-position: center;
+    background-size: cover;
+}
+#dp2{
+    float: right;
+    background-image: url('file:///home/trial/Programm%20code%20files/HTML%20Projects/CamXML/photo_2023-04-02_16-48-51.png');
+    background-position: center;
+    background-size: cover;
+}
+#prsn1 h1,#prsn1 h3{
+    display: inline;
+    border-bottom: 2px solid #19d6c8;
+}
+#prsn1 p{
+    float: right;
+    width: 85%;
+    margin-top: 10px;
+    line-height: 20px;
+}
+#prsn2 h1,#prsn2 h3{
+    display: inline;
+    border-bottom: 2px solid #19d6c8;
+}
+#prsn2 p{
+    width: 85%;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.prsn-container h3{
+    padding: 3px 3px;
+}
+.contact-root{
+    width:100%;
+    height:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact-icon{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 15px;
+    background-color: rgba(29, 23, 23, 0.651);
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
