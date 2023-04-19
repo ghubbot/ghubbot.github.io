@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    background: hsla(222, 25%, 10%);
+}
+.container {
+    width: 100%;
+    border-bottom: 1px solid yellow;
+}
+
+.header {
+    width: 100%;
+    max-height: 100px;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-bottom: 1px solid #3182ed;
+}
+.header .logo-txt {
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+.header .logo-txt span {
+    color: hsl(214, 84%, 56%);
+}
+.header .logo-txt i {
+    margin-right: 7px;
+    color: #3182ed;
+}
+.header form {
+    position: relative;
+    width: 40%;
+    max-width: 215px;
+    display: none;
+}
+.header form .search-option {
+    width: 80%;
+    border: none;
+    outline: none;
+    background: hsl(218, 39%, 14%);
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 15px 0 0 15px;
+    font-weight: 500;
+    color: #fff;
+}
+.header form button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 12px 14px;
+    border-left: 1px solid #3182ed;
+    float: right;
+    background: hsl(218, 39%, 14%);
+    border-radius: 0 15px 15px 0;
+}
+.header .search-btn {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #3182ed;
+}
+.header .search-btn i {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+.banner-container {
+    width: 100%;
+    height: 30vw;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner {
+    width: 90%;
+    max-width: 1000px;
+    height: 90%;
+    border-radius: 10px;
+    background: url("../images/banner/avatar_2\ 1.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.banner-text {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    bottom: 0;
+    top: 80%;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 150%;
+}
+
+
+
+
+.movies {
+    width: 100%;
+    padding: 5%;
+    color: #fff;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+
+}
+.movie-card {
+    
+    --scale:0.8;
+
+    cursor: pointer;
+}
+.movie-card .card-head {
+    position: relative;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.movie-card:hover .card-img { transform: scale(1.1);}
+
+.movie-card .card-overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    backdrop-filter: blur(5px);
+}
+.movie-card:hover .card-overlay {
+    opacity: 1;
+}
+.movie-card .rating {
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #3182ed;
+    transform: scale(var(--scale));
+    display: flex;
+    align-items: center;
+    right: 5px;
+    background: hsla(218, 39%, 14%, 0.8);
+}
+.movie-card .rating span {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.movie-card i {
+    font-size: 15px;
+    display: block;
+}
+.movie-card:hover :is(.rating) { --scale: 1;}
+
+.movie-card .card-title {
+     font-size: 17px;
+     font-weight: 500;
+     margin-bottom: 3px;
+}
+.movie-card:hover .card-title { color: #3182ed;}
+
+.movie-card .card-info {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+}
+.movie-card .genre { margin-right: 8px;}
+
+@media screen and (min-width:400px) {
+    .header form {
+        display: block;
+    }
+    .header .search-btn {
+        display: none;
+    }
+}
