@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSMovies</title>
     <link rel="stylesheet" href="./files/css/main.css">
-</head>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
 
 <body>
 
@@ -21,7 +25,7 @@
             <h2 class="logo-txt"><i class="fa-solid fa-clapperboard"></i>DSM<span>ovies</span></h2>
 
             <form action="#">
-                <input type="search" class="search-option" placeholder="Search movie">
+                <input type="search" class="search-option" placeholder="Search">
                 <button class="search-icon">
                     <i class="fa-brands fa-searchengin" style="color: #ffffff;"></i>
                 </button>
@@ -37,11 +41,30 @@
         -->
 
         <div class="banner-container">
-            <div class="banner">
-                <div class="banner-text">
-                    <h2>Avatar: Way of water</h2>
-                </div>
+
+          <!-- Slider main container -->
+          <div class="swiper">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./files/images/banner/everything_everywhere_all_at_once .jpg"></div>
+              <div class="swiper-slide"><img src="./files/images/4k-ultra-hd-2160p-armored-thanos-pc8uyoba89vhsmwb.jpg"></div>
+              <div class="swiper-slide"><img src="./files/images/movie/hollywood/shazam_2.jpeg"></div>
+              <div class="swiper-slide"><img src="./files/images/movie/bollywood/brahmastra_1.webp"></div>
+
             </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+  
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+  
+          </div>
+
         </div>
 
 
@@ -49,373 +72,95 @@
             MOVIES SECTION
         -->
 
-        <section class="movies">
+        <section class="movie-container">
+            <h2 class="title">Latest Releases</h2>
 
-           <div class="movie-grid">
-
-            <!--MOVIE CARD-->
-
-              <div class="movie-card">
-                
-                   <div class="card-head">
-                       <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-                  
-                       <div class="card-overlay">
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <span>6.7</span>
-                        </div>
-                     </div>
-  
-                    </div>
-  
-                   
-                   <div class="card-body">
-                      <h3 class="card-title">Kabza</h3>
-
-                       <div class="card-info">
-                          <span class="genre">Action/Thriller</span>
-                          <span class="year">2023</span>
-                       </div>
-                    </div>
-              </div>
-
-              <div class="movie-card">
-                
-                <div class="card-head">
-                    <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-               
-                    <div class="card-overlay">
-                     <div class="rating">
-                         <i class="fa-regular fa-star"></i>
-                         <span>6.7</span>
-                     </div>
-                  </div>
-
-                 </div>
-
-                
-                <div class="card-body">
-                   <h3 class="card-title">Kabza</h3>
-
-                    <div class="card-info">
-                       <span class="genre">Action/Thriller</span>
-                       <span class="year">2023</span>
-                    </div>
-                 </div>
-           </div>
-
-           <div class="movie-card">
-                
-            <div class="card-head">
-                <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-           
-                <div class="card-overlay">
-                 <div class="rating">
-                     <i class="fa-regular fa-star"></i>
-                     <span>6.7</span>
-                 </div>
-              </div>
-
-             </div>
-
-            
-            <div class="card-body">
-               <h3 class="card-title">Kabza</h3>
-
-                <div class="card-info">
-                   <span class="genre">Action/Thriller</span>
-                   <span class="year">2023</span>
+            <div class="card">
+              <a href="./files/html/antman_3.html">
+                <div class="card-img"><img src="./files/images/movie/hollywood/ant-man/ant_man_poster.jpg" alt="Poster image"></div>
+                <div class="card-txt">
+                  <h3>Ant-man and the Wasp: Quantumania</h3>
+                  <p>2023</p>
+                  <p>Action/Fiction</p>
                 </div>
-             </div>
-           </div>
-           <div class="movie-card">
-                
-            <div class="card-head">
-                <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-           
-                <div class="card-overlay">
-                 <div class="rating">
-                     <i class="fa-regular fa-star"></i>
-                     <span>6.7</span>
-                 </div>
-              </div>
-
-             </div>
-
-            
-            <div class="card-body">
-               <h3 class="card-title">Kabza</h3>
-
-                <div class="card-info">
-                   <span class="genre">Action/Thriller</span>
-                   <span class="year">2023</span>
-                </div>
-             </div>
-       </div>
-
-       <div class="movie-card">
-                
-        <div class="card-head">
-            <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-       
-            <div class="card-overlay">
-             <div class="rating">
-                 <i class="fa-regular fa-star"></i>
-                 <span>6.7</span>
-             </div>
-          </div>
-
-         </div>
-
-        
-        <div class="card-body">
-           <h3 class="card-title">Kabza</h3>
-
-            <div class="card-info">
-               <span class="genre">Action/Thriller</span>
-               <span class="year">2023</span>
+              </a>
             </div>
-         </div>
-   </div>
 
-   <div class="movie-card">
-                
-    <div class="card-head">
-        <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-   
-        <div class="card-overlay">
-         <div class="rating">
-             <i class="fa-regular fa-star"></i>
-             <span>6.7</span>
-         </div>
-      </div>
+            <div class="card">
+                <div class="card-img"><!--bg-img--></div>
+        
+                <div class="card-txt">
+                  <h3>Movie Title</h3>
+                  <p>year</p>
+                  <p>genre/genre</p>
+                </div>
+            </div>
 
-     </div>
+            <div class="card">
+                <div class="card-img"><!--bg-img--></div>
+        
+                <div class="card-txt">
+                  <h3>Movie Title</h3>
+                  <p>year</p>
+                  <p>genre/genre</p>
+                </div>
+            </div>
 
-    
-    <div class="card-body">
-       <h3 class="card-title">Kabza</h3>
+            <div class="card">
+                <div class="card-img"><!--bg-img--></div>
+        
+                <div class="card-txt">
+                  <h3>Movie Title</h3>
+                  <p>year</p>
+                  <p>genre/genre</p>
+                </div>
+            </div>
 
-        <div class="card-info">
-           <span class="genre">Action/Thriller</span>
-           <span class="year">2023</span>
-        </div>
-     </div>
-</div>
+            <div class="card">
+                <div class="card-img"><!--bg-img--></div>
+        
+                <div class="card-txt">
+                  <h3>Movie Title</h3>
+                  <p>year</p>
+                  <p>genre/genre</p>
+                </div>
+            </div>
 
-<div class="movie-card">
-                
-    <div class="card-head">
-        <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-   
-        <div class="card-overlay">
-         <div class="rating">
-             <i class="fa-regular fa-star"></i>
-             <span>6.7</span>
-         </div>
-      </div>
+            <div class="card">
+                <div class="card-img"><!--bg-img--></div>
+        
+                <div class="card-txt">
+                  <h3>Movie Title</h3>
+                  <p>year</p>
+                  <p>genre/genre</p>
+                </div>
+            </div>
 
-     </div>
-
-    
-    <div class="card-body">
-       <h3 class="card-title">Kabza</h3>
-
-        <div class="card-info">
-           <span class="genre">Action/Thriller</span>
-           <span class="year">2023</span>
-        </div>
-     </div>
-</div>
-
-<div class="movie-card">
-                
-    <div class="card-head">
-        <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-   
-        <div class="card-overlay">
-         <div class="rating">
-             <i class="fa-regular fa-star"></i>
-             <span>6.7</span>
-         </div>
-      </div>
-
-     </div>
-
-    
-    <div class="card-body">
-       <h3 class="card-title">Kabza</h3>
-
-        <div class="card-info">
-           <span class="genre">Action/Thriller</span>
-           <span class="year">2023</span>
-        </div>
-     </div>
-</div>
-
-<div class="movie-card">
- 
- <div class="card-head">
-     <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-
-     <div class="card-overlay">
-      <div class="rating">
-          <i class="fa-regular fa-star"></i>
-          <span>6.7</span>
-      </div>
-   </div>
-
-  </div>
-
- 
- <div class="card-body">
-    <h3 class="card-title">Kabza</h3>
-
-     <div class="card-info">
-        <span class="genre">Action/Thriller</span>
-        <span class="year">2023</span>
-     </div>
-  </div>
-</div>
-
-<div class="movie-card">
- 
-<div class="card-head">
- <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-
- <div class="card-overlay">
-  <div class="rating">
-      <i class="fa-regular fa-star"></i>
-      <span>6.7</span>
-  </div>
-</div>
-
-</div>
-
-
-<div class="card-body">
-<h3 class="card-title">Kabza</h3>
-
- <div class="card-info">
-    <span class="genre">Action/Thriller</span>
-    <span class="year">2023</span>
- </div>
-</div>
-</div>
-<div class="movie-card">
- 
-<div class="card-head">
- <img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-
- <div class="card-overlay">
-  <div class="rating">
-      <i class="fa-regular fa-star"></i>
-      <span>6.7</span>
-  </div>
-</div>
-
-</div>
-
-
-<div class="card-body">
-<h3 class="card-title">Kabza</h3>
-
- <div class="card-info">
-    <span class="genre">Action/Thriller</span>
-    <span class="year">2023</span>
- </div>
-</div>
-</div>
-
-<div class="movie-card">
- 
-<div class="card-head">
-<img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-
-<div class="card-overlay">
-<div class="rating">
-  <i class="fa-regular fa-star"></i>
-  <span>6.7</span>
-</div>
-</div>
-
-</div>
-
-
-<div class="card-body">
-<h3 class="card-title">Kabza</h3>
-
-<div class="card-info">
-<span class="genre">Action/Thriller</span>
-<span class="year">2023</span>
-</div>
-</div>
-</div>
-
-<div class="movie-card">
- 
-<div class="card-head">
-<img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-
-<div class="card-overlay">
-<div class="rating">
-<i class="fa-regular fa-star"></i>
-<span>6.7</span>
-</div>
-</div>
-
-</div>
-
-
-<div class="card-body">
-<h3 class="card-title">Kabza</h3>
-
-<div class="card-info">
-<span class="genre">Action/Thriller</span>
-<span class="year">2023</span>
-</div>
-</div>
-</div>
-
-<div class="movie-card">
- 
-<div class="card-head">
-<img src="./files/images/movie/bollywood/kabza.jpeg" alt="Kabza" class="card-img">
-
-<div class="card-overlay">
-<div class="rating">
-<i class="fa-regular fa-star"></i>
-<span>6.7</span>
-</div>
-</div>
-
-</div>
-
-
-<div class="card-body">
-<h3 class="card-title">Kabza</h3>
-
-<div class="card-info">
-<span class="genre">Action/Thriller</span>
-<span class="year">2023</span>
-</div>
-</div>
-</div>
-
-              
-              
-              
-
-              
-
-           </div>          
+            <div class="card">
+                <div class="card-img"><!--bg-img--></div>
+        
+                <div class="card-txt">
+                  <h3>Movie Title</h3>
+                  <p>year</p>
+                  <p>genre/genre</p>
+                </div>
+            </div>
 
         </section>
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+            <p>Media files of any kind including images and videos are not uploaded by the develepors of this site.</p>
+            <p>All copyrights reserved for respective persons</p>
+        </footer>
+
 
     </div>
     
 
 <script src="https://kit.fontawesome.com/eff1135254.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./files/js/main.js"></script>
 </body>
 </html>

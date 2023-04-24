@@ -1,0 +1,126 @@
+.movie-container {
+    display: flex;
+    
+}
+.movie-container .movie-img-root {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.movie-container .movie-img-root .movie-img {
+    width: 60%;
+    max-width: 250px;
+    height: auto;
+}
+.movie-container .movie-img-root .movie-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+.movie-info {
+    width: 100%;
+    padding: 10px;
+}
+.movie-info h1 {
+    color: #ffffff;
+    font-family: serif;
+}
+.details , .details .meta-info {
+    width: 100%;
+    padding: 5px 0;
+}
+.details .meta-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details .meta-info .rating, .details .meta-info .duration, .details .meta-info .year {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 0 10px;
+}
+.details .meta-info .rating i {
+    color: gold;
+}
+.details .meta-info .rating p, .details .meta-info .duration p, .details .meta-info .year p {
+    font-size: 20px;
+    margin: 0 5px;
+}
+.details .genre {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.details .genre .genre-item {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+}
+.details .description {
+    padding: 10px 5px;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 23px;
+}
+
+
+
+.download-container {
+    width: 100%;
+
+    padding: 25px 15px;
+}
+.download-container .download-option {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0;
+}
+.download-container .download-option a button {
+    margin: 12px 0;
+    min-width: 100px;
+    padding: 13px 45px;
+    border-radius: 30px;
+    background: #3182ed;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+@media screen and (min-width:700px) {
+
+    .movie-container {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        height: 80vh;
+        background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.5)), url("../images/movie/hollywood/ant-man/antman_bg1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .movie-container .movie-img-root {
+        width: 35%;
+    }
+    .movie-container .movie-info {
+        width: 65%;
+    }
+    .download-container {
+        padding: 45px 15px;
+    }
+
+}
