@@ -71,6 +71,63 @@ a {
     background: hsl(218, 39%, 14%);
     border-radius: 0 15px 15px 0;
 }
+.header form .search-result-box {
+    width: 215px;
+    max-height: 300px;
+    border: 0px solid #fff;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: hsl(218, 39%, 14%);
+    border-radius: 3px;
+    z-index: 2;
+    overflow: auto;
+    visibility: hidden;
+}
+.header form .search-result-box .card {
+    display: none;
+}
+.header form .search-result-box::-webkit-scrollbar {
+    width: 7px;
+    background: rgba(184, 184, 184, 0.3);
+    border-radius: 20px;
+}
+.header form .search-result-box::-webkit-scrollbar-thumb {
+    background: rgba(184, 184, 184, 0.7);
+    border-radius: 20px;
+}
+.header form .search-result-box a {
+    text-decoration: none;
+    color: #ffff;
+    width: 100%;
+    height: 50px;
+    border: 0px solid #fff;
+    display: flex;
+    align-items: center;
+    transition: 0.5s linear;
+    border-radius: 3px;
+}
+.header form .search-result-box a:hover {
+    background: hsl(218, 39%, 21%);
+}
+.header form .search-result-box a img {
+    width: 30px;
+    height: 45px;
+    margin: 0 5px;
+} 
+.header form .search-result-box a .details {
+    color: #fff;
+}
+.header form .search-result-box a .details h6 {
+    font-size: 14px;
+}
+.header form .search-result-box a .details p {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+
 .header .search-btn {
     width: 13%;
     height: 60%;
@@ -137,13 +194,11 @@ a {
 .movie-container .card {
     width: 140px;
     margin: 15px 10px;
-    border-radius: 5px;
 }
 
 .movie-container .card .card-img img {
     width: 100%;
     height: 190px;
-    border-radius: 5px;
 }
 .movie-container .card .card-txt {
     width: 100%;

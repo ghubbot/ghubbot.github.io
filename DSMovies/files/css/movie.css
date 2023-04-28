@@ -1,8 +1,5 @@
-.movie-container {
-    display: flex;
-    
-}
-.movie-container .movie-img-root {
+
+.movie-container2 .movie-img-root {
     width: 100%;
     height: auto;
     padding: 10px;
@@ -11,12 +8,12 @@
     justify-content: center;
 
 }
-.movie-container .movie-img-root .movie-img {
+.movie-container2 .movie-img-root .movie-img {
     width: 60%;
     max-width: 250px;
     height: auto;
 }
-.movie-container .movie-img-root .movie-img img {
+.movie-container2 .movie-img-root .movie-img img {
     width: 100%;
     height: auto;
 }
@@ -29,6 +26,7 @@
 .movie-info h1 {
     color: #ffffff;
     font-family: serif;
+    text-align: center;
 }
 .details , .details .meta-info {
     width: 100%;
@@ -75,18 +73,39 @@
     letter-spacing: 0.5px;
     line-height: 23px;
 }
-
+.details .xtra-details ul {
+    color: #ffffff;
+    list-style: none;
+}
+.details .xtra-details ul li {
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    padding-top: 5px;
+}
+.details .xtra-details ul span {
+    color: #3182ed;
+    font-weight: 700;
+    padding-right: 15px;
+}
+.details .xtra-details ul li p {
+    display: block;
+    margin-right: 20px;
+}
 
 
 .download-container {
     width: 100%;
-
     padding: 25px 15px;
 }
 .download-container .download-option {
     text-align: center;
     color: #ffffff;
     padding: 10px 0;
+}
+.download-container .download-option h2 span {
+    font-size: 15px;
+    font-family: sans-serif;
 }
 .download-container .download-option a button {
     margin: 12px 0;
@@ -103,21 +122,21 @@
 
 @media screen and (min-width:700px) {
 
-    .movie-container {
+    .movie-container2 {
         display: flex;
         align-items: center;
         padding: 10px 0;
-        height: 80vh;
-        background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.5)), url("../images/movie/hollywood/ant-man/antman_bg1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        height: auto;
+        min-height: 87vh;
     }
-    .movie-container .movie-img-root {
+    .movie-container2 .movie-img-root {
         width: 35%;
     }
-    .movie-container .movie-info {
+    .movie-container2 .movie-info {
         width: 65%;
+    }
+    .details .xtra-details ul li p {
+        display: inline;
     }
     .download-container {
         padding: 45px 15px;
