@@ -1,78 +1,166 @@
-@import url('./format.css');
+@import url(./format.css);
 
+
+body {
+    background: var(--col-dark);
+}
+a {
+    text-decoration: none;
+}
 .root {
     width: 100%;
     background: transparent;
     color: var(--col-white);
 }
-
-.header {
+.home-top {
     width: 100%;
-    padding: 15px 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    border-bottom: 1px solid var(--col-pink);
+    /* background: black; */
 }
-.header .logo-txt {
+.logo-container {
+    width: 100%;
+    text-align: center;
+    padding: 30px 50px;
+    /* background: orange; */
+}
+.logo-container .logo-txt-l {
     color: var(--col-white);
-    font-size: 1.25rem;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
 }
-.header .logo-txt span {
+.logo-container .logo-txt-l::after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 4px;
+    background: var(--col-pink);
+    bottom: -2px;
+    right: 5%;
+}
+.logo-container .logo-txt-l span {
     color: var(--col-pink);
 }
-.header .search-box .close-btn, .header .search-btn button{
-    width: 35px;
-    height: 35px;
-    background: var(--col-gray);
-    color: var(--col-white);
-    font-size: 15px;
+
+.search-container {
+    width: 100%;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: greenyellow; */
+}
+.search-container .search-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid var(--col-pink);
+    max-width: 300px;
+}
+.search-container .search-wrap input{
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 15px 10px;
+    background: transparent;
     border: none;
     outline: none;
-    border-radius: 5px;
+    color: var(--col-white);
+}
+.search-container .search-wrap button {
+    width: 40px;
+    height: 34px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--col-white);
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* button hover effect */
-.header .search-box {
-    position: absolute;
-    top: 0;
-    left: 0;
+.search-container .search-wrap button:hover {
+    background: black;
+}
+
+.filter-container {
     width: 100%;
-    height: 100%;
-    background: var(--col-dark);
-    border: none;
-    padding: 15px 20px;
-    align-items: center;
-    gap: 8px;
-    z-index: 1;
-    display: none;
-}
-.search-box form {
-    position: relative;
-    flex-grow: 1;
-}
-.search-box form .search-field {
-    width: 100%;
-    height: 35px;
-    padding: 0 10px;
-    background: var(--col-gray);
-    border: none;
-    outline: none;
-    color: var(--col-white);
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 5px;
-}
-.search-box form .search-field:focus {
-    border: 2px solid rgba(255, 255, 255, 0.8);
-}
-.search-field::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
-.search-box.active {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 15px;
+    /* background: cyan; */
+}
+.filter-container .filter {
+    display: inline-block;
+    background: transparent;
+    padding: 10px;
+    color: var(--col-white);
+    border: 1px solid var(--col-pink);
+}
+.filter-container .filter:hover {
+    background: var(--col-pink);
+}
+
+
+
+
+.ads-container {
+    width: 100%;
+    background-color: gray;
+    color: var(--col-white);
+    text-align: center;
+    padding: 100px 30px;
+    font-size: 15px;
+}
+
+
+.movie-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.movie-container .title {
+    display: block;
+    width: 100%;
+    color: #ffff;
+    font-size: 1.5rem;
+    margin: 10px;
+    position: relative;
+}
+.movie-container .card {
+    width: 140px;
+    margin: 15px 10px;
+}
+
+.movie-container .card .card-img img {
+    width: 100%;
+    height: 190px;
+}
+.movie-container .card .card-txt {
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+    color: #ffff;
+}
+.movie-container .card .card-txt h3 {
+    font-size: 1rem;
+}
+.movie-container .card .card-txt p {
+    font-size: 0.75rem;
+    margin-top: 5px ;
+}
+
+
+.home-footer {
+    color: var(--col-white);
+    text-align: center;
+    background: rgb(7, 5, 12);
+    font-size: 10px;
+    padding: 10px;
 }
