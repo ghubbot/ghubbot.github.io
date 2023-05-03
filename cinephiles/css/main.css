@@ -99,6 +99,7 @@ a {
     padding: 10px;
     color: var(--col-white);
     border: 1px solid var(--col-pink);
+    
 }
 .filter-container .filter:hover {
     background: var(--col-pink);

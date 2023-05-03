@@ -12,8 +12,8 @@
     <div class="root">
         
 
-        <!--#
-            HEADER
+        <!--
+           # HEADER
         -->
         <header class="header">
 
@@ -21,7 +21,7 @@
 
             <div class="search-box" id="search-box">
                 <form action="#" class="search-form">
-                    <input type="text" class="search-field" placeholder="Search movies...">
+                    <input type="text" class="search-field" placeholder="Search movies..." autofocus>
                 </form>
                 <button class="close-btn" onclick="searchToggle()"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -32,11 +32,112 @@
 
         </header>
 
+        <!--
+            # MOVIE POSTER AND DETAILS
+        -->
+
+        <section class="movie-info-container" style="background: linear-gradient(to top,rgb(15, 17, 21),rgba(0,0,0,0.4)),url('../images/antman_bg2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;">
+
+            <div class="poster-container">
+                <div class="poster-wrapper">
+                    <img src="../images/poster.jpg" alt="Poster">
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h1>Ant-man and the Wasp: Quantumania</h1>
+                <div class="details">
+                    <div class="meta-info">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <p>6.3</p>
+                        </div>
+                        <div class="duration">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>2h 5m</p>
+                        </div>
+                        <div class="year">
+                            <i class="fa-regular fa-calendar"></i>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                    <div class="genre">
+                        <div class="genre-item">Action</div>
+                        <div class="genre-item">Adventure</div>
+                        <div class="genre-item">Fiction</div>
+                    </div>
+                    <div class="description">
+                        Scott Lang and Hope Van Dyne are dragged into the Quantum Realm, along with Hope's parents and Scott's daughter Cassie. Together they must find a way to escape, but what secrets is Hope's mother hiding? And who is the mysterious Kang?
+                    </div>
+                    <div class="xtra-details">
+                        <ul>
+                            <li>
+                                <span>Director</span>
+                                <div>
+                                    <p>Peyton Reed</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Stars</span>
+                                <div>
+                                  <p>Paul Rudd</p>
+                                  <p>Evangeline Lilly</p>
+                                  <p>Micheal Douglas</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Writer</span>
+                                <div>
+                                    <p>Jeff Loveness</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--
+            # DOWNLOAD + EXTRA DETAILS ABOUT FILE
+        -->
+
+        <section class="download-container">
+
+            <div class="download-option">
+                <h2>Ant-man and the Wasp: Quantumania File 1<span>(provider)</span></h3>
+                <a href="#"><button>Download</button></a>
+            </div>
+
+            <div class="download-option">
+                <h2>Ant-man and the Wasp: Quantumania File 2<span>(provider)</span></h3>
+                <a href="#"><button>Download</button></a>
+            </div>
+
+            <div class="download-option">
+                <h2>Ant-man and the Wasp: Quantumania File 3<span>(provider)</span></h3>
+                <a href="#"><button>Download</button></a>
+            </div>
+
+        </section>
+
+        <!--
+            # FOOTER
+        -->
+
+        <section class="footer">
+            <p>Media files of any kind including images and videos are not uploaded by the develepors of this site.</p>
+            <p>All copyrights reserved for respective persons</p>
+        </section>
+
     </div>    
 
 
 
     <script src="https://kit.fontawesome.com/eff1135254.js" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/movie-page.js"></script>
 </body>
 </html>
