@@ -160,11 +160,13 @@
     color: #ffffff;
     list-style: none;
 }
+.details .xtra-details {
+    padding: 5px;
+}
 .details .xtra-details ul li {
     color: #ffffff;
     font-size: 1rem;
     display: flex;
-    padding-top: 5px;
 }
 .details .xtra-details ul span {
     color: var(--col-pink);
@@ -211,6 +213,74 @@
 }
 
 
+.middle-container {
+    width: 100%;
+}
+.page-ad-container {
+    width: 100%;
+    color: var(--col-white);
+    text-align: center;
+    padding: 100px 30px;
+    font-size: 15px;
+    /* background: gray; */
+}
+
+
+.sc-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    overflow: hidden;
+    /* background: gray; */
+}
+.sc-container h5 {
+    color: var(--col-white);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.sc-container .sc-block {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* background: yellow; */
+}
+.sc-container .sc-block img {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
+
+.file-details-container {
+    padding: 0 10px;
+}
+.file-details-container .file-description{
+    width: 100%;
+    padding: 10px 5px;
+    text-align: left;
+    font-size: 1rem;
+}
+.file-details-container .file-details-list {
+    padding: 10px 5px;
+    text-align: left;
+    font-size: 1rem;
+}
+.file-details-container .file-details-list ul {
+    margin-top: 10px;
+    list-style: disc;
+    list-style-position: inside;
+}
+.file-details-container .file-details-list ul li {
+    margin-top: 3px;
+}
+
+
+
 .footer {
     color: var(--col-white);
     text-align: center;
@@ -253,5 +323,4 @@
     .download-container {
         padding: 45px 15px;
     }
-
 }
