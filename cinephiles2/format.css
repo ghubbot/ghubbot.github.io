@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --col-pink: rgb(255, 0, 102) ;
+    --col-dark: rgb(15, 17, 21);
+    --col-dark2: rgb(43, 43, 43);
+    --col-white: #ffffff;
+    --col-gray: rgb(49, 48, 54);
+    --ff-poppins:'Poppins', sans-serif;
+    font-size: 62.5%;
+
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--col-dark);
+    color: var(--col-white);
+    font-family: var(--ff-poppins);
+    font-size: 1.6rem;
+}
+h1 {
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
