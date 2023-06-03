@@ -181,6 +181,7 @@
     text-align: center;
     padding: 1rem;
     color: var(--col-white);
+    background: var(--col-dark2);
     border-top: 2px solid var(--col-pink);
 }
 .footer p {
