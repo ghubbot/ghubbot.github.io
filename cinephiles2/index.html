@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-    <header class="home-header">
-        <h1 class="logo logo-l">Cine<span>philes</span></h1>
+    <header class="home-header p-1">
+        <h1 class="logo logo-l p-1">Cine<span>philes</span></h1>
     </header>
 
-    <div class="flex-container j-center">
+    <div class="search-container">
+        <form action="" class="search-field">
+            <input class="p-1" type="text" placeholder="Search">
+            <button type="submit"></button>
+        </form>
+    </div>
+
+    <div class="flex-container j-center p-1">
         <div class="filters">English</div>
         <div class="filters">Hindhi</div>
         <div class="filters">Malayalam</div>
@@ -23,21 +30,22 @@
         <div class="filters">Bollywood</div>
     </div>
 
-    <div class="ad-box">
+    <div class="ad-box p-1">
         <h2>AD</h2>
     </div>
 
-    <div class="text-box warn-text">
-        <p>This is a sample text</p>
+    <div class="text-box warn-text p-1">
+        <h2>Sample Heading</h2>
+        <p>This is a sample text <span>sample</span></p>
     </div>
 
-    <div class="text-box head-text">
+    <div class="text-box pt-02">
         <h2>Trending</h2>
     </div>
 
-    <section class="flex-container j-center full-container">
+    <section class="flex-container j-center pb-10">
 
-        <a href="">
+        <a href="./moviePage.html">
             <div class="card">
                 <div class="card-img">
                     <img src="./images/poster.jpg" alt="poster">
@@ -221,7 +229,7 @@
 
     </section>
 
-    <footer class="footer">
+    <footer class="footer p-1">
         <h1 class="logo logo-s">Cine<span>philes</span></h1>
         <p>Media files of any kind in this website are not owned by authors of this site.</p>
         <p>All copyrights given to respective owners.</p>

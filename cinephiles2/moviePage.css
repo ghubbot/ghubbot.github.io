@@ -1,0 +1,137 @@
+@import url('./format.css');
+
+
+/* header */
+.page-header {
+    padding: 0.3rem 2rem;
+    background: var(--col-dark2);
+    border-bottom: 2px solid var(--col-pink);
+}
+/* movie section */
+.movie-info {
+    min-height: 100vh;
+    /* background: cyan; */
+}
+.poster-container {
+    width: 40%;
+    padding-top: 30px;
+    /* background: purple; */
+}
+.poster-wrap {
+    width: 200px;
+    /* background: red; */
+}
+.poster-wrap img {
+    width: 100%;
+}
+.info-container {
+    width: 60%;
+    color: var(--col-white);
+    /* background: blue; */
+}
+.title h1{
+    text-align: center;
+    padding: 0.5rem ;
+    font-size: 2.1rem;
+    color: var(--col-white);
+    /* background: rgb(65, 65, 16); */
+}
+.meta-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 1rem;
+    /* background: red; */
+}
+.meta-info p {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+.meta-info i {
+    font-size: 1.6rem;
+}
+/* .g-box {
+    background: yellow;
+} */
+.genre {
+    margin: 0.5rem 0.8rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+.description {
+    color: var(--col-white);
+    padding: 1rem 0;
+    line-height: 20px;
+    font-size: 1.4rem;
+    /* background: purple; */
+}
+/* .crew {
+    background: blueviolet;
+} */
+.slot {
+    display: flex;
+    /* background: rgb(19, 104, 37); */
+}
+.slot p {
+    margin: 0.5rem 1rem 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* background: pink; */
+}
+.slot ul {
+    list-style: none;
+    /* background: pink; */
+}
+.slot ul li {
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* screenshots section */
+.screenshot {
+    max-width: 300px;
+    height: auto;
+    margin: 1rem;
+}
+
+/* download section */
+.download-title {
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--col-white);
+}
+.download-title span {
+    margin-left: 0.5rem;
+}
+.download-btn {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: var(--col-white);
+    background: var(--col-pink);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin:  1rem;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .poster-container {
+        width: 100%;
+    }
+    .info-container {
+        width: 100%;
+    }
+    .poster-wrap {
+        width: 170px;
+    }
+}
+@media screen and (max-width:650px) {
+    .screenshot {
+        max-width: 250px;
+    }
+}
