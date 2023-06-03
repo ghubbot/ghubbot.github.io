@@ -3,9 +3,13 @@
 
 /* header */
 .page-header {
+    width: 100%;
     padding: 0.3rem 2rem;
     background: var(--col-dark2);
     border-bottom: 2px solid var(--col-pink);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 /* movie section */
 .movie-info {
@@ -14,7 +18,7 @@
 }
 .poster-container {
     width: 40%;
-    padding-top: 30px;
+    padding-top: 90px;
     /* background: purple; */
 }
 .poster-wrap {
@@ -62,7 +66,6 @@
 }
 .description {
     color: var(--col-white);
-    padding: 1rem 0;
     line-height: 20px;
     font-size: 1.4rem;
     /* background: purple; */
@@ -99,7 +102,7 @@
 
 /* download section */
 .download-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--col-white);
 }
@@ -132,6 +135,7 @@
 }
 @media screen and (max-width:650px) {
     .screenshot {
-        max-width: 250px;
+        width: 90%;
+        max-width: 350px;
     }
 }

@@ -1,0 +1,46 @@
+@import url('./format.css');
+
+.table-container {
+    max-width: 700px;
+    width: 90%;
+}
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td {
+    border-bottom: 1px solid #ffff;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+}
+thead,th {
+    background: rgb(15, 15, 15);
+    padding: 2rem;
+}
+tbody, td {
+    background: var(--col-dark2);
+}
+tr:hover {
+    background: rgb(49, 48, 54);
+}
+
+.edit-btn {
+    background: var(--col-dark2);
+    border: 1px solid lawngreen;
+}
+.dlt-btn {
+    background: var(--col-dark2);
+    border: 1px solid red;
+}
+
+.admin-search {
+    max-width: 250px;
+    width: 60%;
+}
+
+@media screen and (max-width:500px) {
+    th,td {
+        font-size: 1.3rem;
+    }
+}
