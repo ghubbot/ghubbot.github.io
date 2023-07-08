@@ -1,0 +1,3 @@
+# links - movie cards in home, logo in moviepage, download btn.
+# form - search option in home, don't forget to add name to 'input'.
+# assets - slider images, moviecards, poster, screenshots.

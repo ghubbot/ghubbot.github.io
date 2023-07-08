@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --col-theme1: #ffb43a;
+    --col-body: #1e1e2a;
+    --col-dark: #171720;
+    --col-hover: hsl(37, 94%, 57%);
+    --col-container: #2d2e37;
+    --col-text: #fcfeff;
+    --col-border: hsl(200 100% 99% / 5%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 2rem; */
+}
+body {
+    background: var(--col-body);
+    color: var(--col-text);
+}
+a {
+    text-decoration: none;
+    color: var(--col-text);
+}
+li {
+    list-style: none;
+}
