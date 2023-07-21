@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(8, 8, 8);
+}
+
+.fs-7 {
+    font-size: 7px;
+}
+.fs-8 {
+    font-size: 8px;
+}
+.fs-9 {
+    font-size: 9px;
+}
+.fs-10 {
+    font-size: 10px;
+}
+.fs-11 {
+    font-size: 11px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-17 {
+    font-size: 17px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-19 {
+    font-size: 19px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-21 {
+    font-size: 21px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-23 {
+    font-size: 23px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fs-26 {
+    font-size: 26px;
+}
+.fs-27 {
+    font-size: 27px;
+}
+.fs-28 {
+    font-size: 28px;
+}
+.fs-29 {
+    font-size: 29px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+
+
+.m-5 {
+    margin: 5px 0 0 5px;
+}
+.m-7 {
+    margin: 7px 0 0 7px;
+}
+.m-8 {
+    margin: 8px 0 0 8px;
+}
+.m-9 {
+    margin: 9px 0 0 9px;
+}
+.m-10 {
+    margin: 10px 0 0 10px;
+}
+.m-11 {
+    margin: 11px 0 0 11px;
+}
+.m-12 {
+    margin: 12px 0 0 12px;
+}
+.m-13 {
+    margin: 13px 0 0 13px;
+}
+.m-14 {
+    margin: 14px 0 0 14px;
+}
+.m-15 {
+    margin: 15px 0 0 15px;
+}
+
+
+.bg-red {
+    background: rgb(255, 0, 0);
+}
+.bg-blue {
+    background-color: rgb(0, 162, 255);
+}
+.bg-yellow {
+    background: rgb(248, 203, 0);
+}
+.bg-green {
+    background: rgb(72, 255, 0);
+}
+.bg-black {
+    background: rgb(171, 7, 221);
+}
